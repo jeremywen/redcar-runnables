@@ -1,0 +1,28 @@
+{
+    "commands": [
+        {
+            "name":"install",
+            "command":"mvn install",
+            "description":"Build and Install Maven Project",
+            "type":"maven"
+        },
+        {
+            "name":"build without tests",
+            "command":"mvn install -Dmaven.test.skip=true",
+            "description":"Build and Install Maven Project, without running tests",
+            "type":"maven"
+        },
+        {
+            "name":"clean",
+            "command":"mvn clean",
+            "description":"Clean target directory of Maven project",
+            "type":"maven"
+        },
+        {
+            "name":"deploy",
+            "command":"mvn deploy",
+            "description":"Deploys maven project to a central repository from the POM",
+            "type":"maven"
+        }
+    ]
+}

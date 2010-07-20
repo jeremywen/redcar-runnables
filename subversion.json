@@ -1,0 +1,16 @@
+{
+    "commands": [
+        {
+            "name":"svn update",
+            "command":"svn up",
+            "description":"Update project from respository",
+            "type":"versioning/svn"
+        },
+        {
+            "name":"svn cleanup",
+            "command":"svn cleanup",
+            "description":"Cleanup working copy and remove locks",
+            "type":"versioning/svn"
+        }
+    ]
+}

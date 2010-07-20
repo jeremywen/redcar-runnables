@@ -1,0 +1,36 @@
+{
+    "commands": [
+        {
+            "name":         "run",
+            "command":      "grails run-app",
+            "description":  "Start grails web project",
+            "type":         "task/grails"
+        },
+        {
+            "name":         "clean",
+            "command":      "grails clean",
+            "description":  "Clean grails web project",
+            "type":         "task/grails"
+        },
+        {
+            "name":         "test",
+            "command":      "grails test-app -clean",
+            "description":  "Test grails web project",
+            "type":         "task/grails"
+        },
+        {
+            "name":         "war",
+            "command":      "grails war",
+            "description":  "Create deployable war",
+            "type":         "task/grails"            
+        }
+    ],
+    "file_runners":[
+        {
+            "regex":        ".*.groovy",
+            "name":         "Run as groovy",
+            "command":      "groovy __PATH__",
+            "type":         "script/groovy"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "commands": [
+        {
+            "name":"vcs update",
+            "command":"rabbitvcs update",
+            "description":"Update project from central respository",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs cleanup",
+            "command":"rabbitvcs cleanup",
+            "description":"Cleanup working copy and remove locks",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs commit",
+            "command":"rabbitvcs commit",
+            "description":"Commit project to central respository",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs revert",
+            "command":"rabbitvcs revert",
+            "description":"Revert changes to base revision",
+            "type":"versioning/generic",
+            "output":"none"
+        }
+    ]
+}
