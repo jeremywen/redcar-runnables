@@ -24,5 +24,13 @@
             "description":"Deploys maven project to a central repository from the POM",
             "type":"maven"
         }
-    ]
+    ],
+	"file_runners": [
+		{
+			"regex":    ".*.java",
+			"name":     "run java via maven",
+			"command":  "mvn process-classes -e org.codehaus.mojo:exec-maven-plugin:1.1.1:exec -Dexec.args='-Xms128m -Xmx512m -classpath %classpath __PATH__' -Dexec.executable=java",
+			"type":     "maven/java"
+		}
+	]
 }
