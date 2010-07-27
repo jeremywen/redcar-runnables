@@ -1,9 +1,23 @@
 {
     "commands": [
         {
-            "name":"vcs update",
-            "command":"rabbitvcs update",
-            "description":"Update project from central respository",
+            "name":"about RabbitVCS",
+            "command":"rabbitvcs about",
+            "description":"About RabbitVCS",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs add",
+            "command":"rabbitvcs add",
+            "description":"Add files to working directory",
+            "type":"versioning/generic",
+            "output":"none"
+        },        
+        {
+            "name":"vcs checkout",
+            "command":"rabbitvcs checkout",
+            "description":"Check out a VCS repository",
             "type":"versioning/generic",
             "output":"none"
         },
@@ -22,9 +36,93 @@
             "output":"none"
         },
         {
+            "name":"vcs ignore",
+            "command":"rabbitvcs ignore",
+            "description":"Ignore files in current working directory",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs lock",
+            "command":"rabbitvcs lock",
+            "description":"Lock files",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs log",
+            "command":"rabbitvcs log",
+            "description":"Show revision history",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs properties",
+            "command":"rabbitvcs properties",
+            "description":"View information about current VCS repository",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs relocate",
+            "command":"rabbitvcs relocate",
+            "description":"Change remote repository URL of current working directory",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs rename",
+            "command":"rabbitvcs rename",
+            "description":"Rename working directory",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs resolve",
+            "command":"rabbitvcs resolve",
+            "description":"Resolve conflicts between working directory and remote repository",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
             "name":"vcs revert",
             "command":"rabbitvcs revert",
             "description":"Revert changes to base revision",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs settings",
+            "command":"rabbitvcs settings",
+            "description":"Change repository settings",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs switch",
+            "command":"rabbitvcs switch",
+            "description":"VCS Switch",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs unlock",
+            "command":"rabbitvcs unlock",
+            "description":"Release file locks",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs update",
+            "command":"rabbitvcs update",
+            "description":"Update project from central respository",
+            "type":"versioning/generic",
+            "output":"none"
+        },
+        {
+            "name":"vcs update to revision",
+            "command":"rabbitvcs updateto",
+            "description":"Update project from central respository to a specific revision",
             "type":"versioning/generic",
             "output":"none"
         }

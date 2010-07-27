@@ -1,28 +1,52 @@
 {
     "commands": [
         {
-            "name":         "run",
+            "name":         "run application",
             "command":      "grails run-app",
             "description":  "Start grails web project",
-            "type":         "task/grails"
+            "type":         "grails"
+        },
+        {
+            "name":         "run war",
+            "command":      "grails run-war",
+            "description":  "Start grails web project from war",
+            "type":         "grails"
         },
         {
             "name":         "clean",
             "command":      "grails clean",
             "description":  "Clean grails web project",
-            "type":         "task/grails"
+            "type":         "grails"
         },
         {
-            "name":         "test",
+            "name":         "dependency report",
+            "command":      "grails dependency-report",
+            "description":  "TRun ivy dependency report",
+            "type":         "grails"
+        },
+        {
+            "name":         "run all tests",
             "command":      "grails test-app -clean",
             "description":  "Test grails web project",
-            "type":         "task/grails"
+            "type":         "grails"
         },
         {
-            "name":         "war",
+            "name":         "run integration tests",
+            "command":      "grails test-app -integration -clean",
+            "description":  "Run environment integration tests",
+            "type":         "grails"
+        },
+        {
+            "name":         "run unit tests",
+            "command":      "grails test-app -unit -clean",
+            "description":  "Run JUnit tests",
+            "type":         "grails"
+        },
+        {
+            "name":         "create war",
             "command":      "grails war",
             "description":  "Create deployable war",
-            "type":         "task/grails"            
+            "type":         "grails"            
         }
     ],
     "file_runners":[
@@ -31,6 +55,12 @@
             "name":         "Run as groovy",
             "command":      "groovy __PATH__",
             "type":         "script/groovy"
+        },
+        {
+            "regex":        ".*.java",
+            "name":         "Run as java",
+            "command":      "java __PATH__",
+            "type":         "java"
         }
     ]
 }

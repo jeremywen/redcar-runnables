@@ -1,6 +1,12 @@
 {
     "commands": [
         {
+            "name":"svn diff",
+            "command":"svn diff",
+            "description":"View diff between cwd and remote repository",
+            "type":"versioning/svn"
+        },
+        {
             "name":"svn update",
             "command":"svn up",
             "description":"Update project from respository",
