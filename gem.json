@@ -1,0 +1,46 @@
+{
+    "commands": [
+        {
+            "name":"cleanup",
+            "command":"gem cleanup",
+            "description":"remove old gems",
+            "type":"rubygem"
+        },
+        {
+            "name":"check for aliens",
+            "command":"gem check -a",
+            "description":"run check for unmanaged files",
+            "type":"rubygem"
+        },
+        {
+            "name":"debug check",
+            "command":"gem check --debug",
+            "description":"turn on Ruby debugging",
+            "type":"rubygem"
+        },
+        {
+            "name":"run unit tests",
+            "command":"gem check -t",
+            "description":"run unit tests",
+            "type":"rubygem"
+        },
+        {
+            "name":"view environment",
+            "command":"gem environment",
+            "description":"view rubygems environment",
+            "type":"rubygem"
+        },
+        {
+            "name":"list gems",
+            "command":"gem list",
+            "description":"list all gems",
+            "type":"rubygem"
+        },
+        {
+            "name":"update gems",
+            "command":"gem update",
+            "description":"update all gems",
+            "type":"rubygem"
+        }
+    ]
+}

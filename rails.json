@@ -1,0 +1,28 @@
+{
+    "commands": [
+        {
+            "name":         "commandsapp",
+            "command":      "rails commandsapp",
+            "description":  "Create application",
+            "type":         "rails"
+        },
+        {
+            "name":         "Start server",
+            "command":      "rails server",
+            "description":  "Start web application",
+            "type":         "rails"
+        },
+        {
+            "name":         "list generators",
+            "command":      "./script/generate",
+            "description":  "list generators",
+            "type":         "rails"
+        },
+        {
+            "name":         "About",
+            "command":      "./script/about",
+            "description":  "View application properties",
+            "type":         "rails"
+        }
+    ]
+}

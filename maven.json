@@ -31,7 +31,7 @@
             "type":"maven"
         },
         {
-            "name":"irun tests",
+            "name":"run tests",
             "command":"mvn test",
             "description":"Run all tests",
             "type":"maven"
