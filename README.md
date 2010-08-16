@@ -6,10 +6,17 @@ redcar Runnables
 Runnables
 ---------
 
+**features.json** - Ruby features and specs
+
+**gem.json** - Basic RubyGem commands
+
+**grails.json** - Build, test, run grails projects. Requires: Grails, Java
+
 **maven.json** - Install, test, run maven projects. Requires: Maven2
 
 **rabbitvcs.json** - GUI for VCS commands (Subversion and Git). Requires: RabbitVCS, rabbitvcs-cli. Platform: Linux
 
-**grails.json** - Build, test, run grails projects. Requires: Grails, Java
+**rails.json** - General Ruby on Rails commands
 
 **subversion.json** - Update, Clean subversion repository. Requires: Subversion
+
