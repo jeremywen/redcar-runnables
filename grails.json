@@ -1,6 +1,12 @@
 {
     "commands": [
         {
+            "name":         "clean",
+            "command":      "grails clean",
+            "description":  "Clean grails web project",
+            "type":         "grails"
+        },
+        {
             "name":         "run application",
             "command":      "grails run-app",
             "description":  "Start grails web project",
@@ -10,12 +16,6 @@
             "name":         "run war",
             "command":      "grails run-war",
             "description":  "Start grails web project from war",
-            "type":         "grails"
-        },
-        {
-            "name":         "clean",
-            "command":      "grails clean",
-            "description":  "Clean grails web project",
             "type":         "grails"
         },
         {
@@ -43,10 +43,16 @@
             "type":         "grails"
         },
         {
+            "name":         "run features",
+            "command":      "grails cucumber run-app",
+            "description":  "Run cucumber features (requires features plugin)",
+            "type":         "grails"
+        },
+        {
             "name":         "create war",
             "command":      "grails war",
             "description":  "Create deployable war",
-            "type":         "grails"            
+            "type":         "grails"
         }
     ],
     "file_runners":[

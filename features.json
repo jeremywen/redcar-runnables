@@ -11,13 +11,13 @@
         {
             "regex": ".*\\.feature",
             "name": "Run as feature",
-            "command": "jruby -J-XstartOnFirstThread bin/cucumber __PATH__",
+            "command": "jruby -S bin/cucumber __PATH__",
             "type": "test/ruby/feature"
         },
         {
             "regex": ".*_spec\\.rb",
             "name": "Run a spec",
-            "command": "jruby -J-XstartOnFirstThread -S spec __PATH__",
+            "command": "jruby -S spec __PATH__",
             "type": "test/ruby/spec"
         }
     ]
