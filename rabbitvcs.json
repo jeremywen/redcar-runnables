@@ -34,7 +34,7 @@
             "description":"Add files to working directory",
             "type":"versioning/generic",
             "output":"none"
-        },        
+        },
         {
             "name":"checkout",
             "command":"rabbitvcs checkout",

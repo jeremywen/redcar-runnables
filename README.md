@@ -1,7 +1,7 @@
 redcar Runnables
 ================
 
-[Redcar](http://redcareditor.com) Runnables files are stored in the project root directory under [project root]/.redcar/runnables.
+[Redcar](http://redcareditor.com) Runnables files are stored in the project root directory under [project root]/.redcar/runnables or ~/.redcar/runnables.
 
 Runnables
 ---------
@@ -20,3 +20,4 @@ Runnables
 
 **subversion.json** - Update, Clean subversion repository. Requires: Subversion
 
+**todo.txt.json** - View and edit todo.txt tasks. Requires: todotxt-cli
