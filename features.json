@@ -1,10 +1,16 @@
 {
     "commands":[
         {
-        "name": "Full suite",
+            "name": "Full suite",
             "command": "jruby -S rake",
             "description": "Run the full test suite",
-            "type": "task/ruby/rake"
+            "type": "rake"
+        },
+        {
+            "name": "Run feature set",
+            "command": "jruby -S bin/cucumber __PARAMS__",
+            "description": "Choose a set of features to run",
+            "type": "feature"
         }
     ],
     "file_runners":[

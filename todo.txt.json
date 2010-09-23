@@ -4,79 +4,78 @@
             "name" : "todo list",
             "command" : "todo list",
             "description" : "List todo tasks",
-            "type" : "gtd"
+            "type" : "reports"
         },
         {
             "name" : "todo list file",
             "command" : "todo listfile __PARAMS__",
             "description" : "List todo tasks in a file",
-            "type" : "gtd"
+            "type" : "reports"
         },
         {
             "name" : "view projects",
             "command" : "todo projectview",
             "description" : "List todo projects",
-            "type" : "gtd"
+            "type" : "reports"
         },
         {
             "name" : "bird's eye view",
             "command" : "todo birdseye",
             "description" : "Show todo progress",
-            "type" : "gtd"
+            "type" : "reports"
         },
         {
             "name" : "prioritize task",
             "command" : "todo pri __PARAMS__",
             "description" : "Prioritize task",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "add task",
             "command" : "todo add __PARAMS__",
             "description" : "Add task to todo list",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "do task",
             "command" : "todo do __PARAMS__",
             "description" : "Mark task as completed",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "delete task",
             "command" : "todo delete __PARAMS__",
             "description" : "Delete task without completing it",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "append to task",
             "command" : "todo append __PARAMS__",
             "description" : "Append to an existing task",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "prepend to task",
             "command" : "todo prepend __PARAMS__",
             "description" : "Prepend to an existing task",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "replace task",
             "command" : "todo replace __PARAMS__",
             "description" : "Replace task",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "archive tasks",
             "command" : "todo archive",
             "description" : "Archive completed tasks",
-            "type" : "gtd"
+            "type" : "tasks"
         },
         {
             "name" : "help",
             "command" : "todo help",
-            "description" : "todo.txt help",
-            "type" : "gtd"
+            "description" : "todo.txt help"
         }
     ]
 }
