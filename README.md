@@ -21,3 +21,5 @@ Runnables
 **subversion.json** - Update, Clean subversion repository. Requires: Subversion
 
 **todo.txt.json** - View and edit todo.txt tasks. Requires: todotxt-cli
+
+**markdown.json** - A file runner for opening a preview of markdown files (OS-specific, needs tweaked to work on a given system. Default: GNOME-based Linux)

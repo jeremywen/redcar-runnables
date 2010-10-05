@@ -1,23 +1,22 @@
 {
-    "commands":[
+    "commands" : [
         {
-            "name": "Full suite",
+        "name": "Full test suite",
             "command": "jruby -S rake",
-            "description": "Run the full test suite",
-            "type": "rake"
-        },
-        {
-            "name": "Run feature set",
-            "command": "jruby -S bin/cucumber __PARAMS__",
-            "description": "Choose a set of features to run",
-            "type": "feature"
+            "description": "Run the full test suite"
         }
     ],
-    "file_runners":[
+    "file_runners" : [
         {
             "regex": ".*\\.feature",
             "name": "Run as feature",
             "command": "jruby -S bin/cucumber __PATH__",
+            "type": "test/ruby/feature"
+        },
+        {
+            "regex": ".*\\.feature",
+            "name": "Run currently selected scenario",
+            "command": "jruby -S bin/cucumber __PATH__:__LINE__",
             "type": "test/ruby/feature"
         },
         {

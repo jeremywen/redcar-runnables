@@ -1,0 +1,11 @@
+{
+    "file_runners" : [
+        {
+            "regex"   : ".*.md",
+            "name"    : "preview Markdown file",
+            "command" : "perl ~/bin/Markdown.pl __PATH__ > /tmp/preview.html && gnome-open /tmp/preview.html",
+            "type"    : "markdown",
+            "output"  : "none"
+        }
+    ]
+}

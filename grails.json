@@ -142,7 +142,7 @@
             "name":         "help",
             "command":      "grails help",
             "description":  "Help with grails commands",
-            "type":         "grails"
+            "type":         "grails/help"
         },
         {
             "name":         "init",
