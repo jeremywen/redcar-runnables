@@ -1,0 +1,101 @@
+{
+    "commands": [
+        {
+            "name" : "rebase",
+            "command" : "git svn rebase",
+            "description" : "rebase from a svn repository",
+            "type" : "svn"
+        },
+        {
+            "name" : "rebase",
+            "command" : "git rebase",
+            "description" : "rebase from a repository",
+            "type" : "basic"
+        },
+        {
+            "name" : "commit",
+            "command" : "git svn dcommit",
+            "description" : "commit to a svn repository",
+            "type" : "svn"
+        },
+        {
+            "name" : "commit",
+            "command" : "git commit -m \"__PARAMS__\"",
+            "description" : "commit to a repository",
+            "type" : "basic"
+        },
+        {
+            "name" : "pull",
+            "command" : "git pull __PARAMS__",
+            "description" : "pull remote changes",
+            "type" : "basic"
+        },
+        {
+            "name" : "push",
+            "command" : "git push __PARAMS__",
+            "description" : "push changes to remote repository",
+            "type" : "basic"
+        },
+        {
+            "name" : "bisect",
+            "command" : "git bisect __PARAMS__",
+            "description" : "run bisection commands",
+            "type" : "report"
+        },
+        {
+            "name" : "cherry pick",
+            "command" : "git cherry-pick __PARAMS__",
+            "description" : "pull changes from certain commits or files",
+            "type" : "advanced"
+        },
+        {
+            "name" : "add",
+            "command" : "git add __PARAMS__",
+            "description" : "add files to index",
+            "type" : "basic"
+        },
+        {
+            "name"        : "difftool",
+            "command"     : "git difftool",
+            "description" : "view visual diffs",
+            "type"        : "report",
+            "output"      : "none"
+        },
+        {
+            "name"        : "diff",
+            "command"     : "git diff",
+            "description" : "view diffs",
+            "type"        : "report"
+        },
+        {
+            "name"        : "status",
+            "command"     : "git status",
+            "description" : "view repository status",
+            "type"        : "report"
+        },
+        {
+            "name" : "checkout",
+            "command" : "git checkout __PARAMS__",
+            "description" : "switch branches",
+            "type" : "basic"
+        },
+        {
+            "name" : "view branches",
+            "command" : "git branch -v",
+            "description" : "view branches",
+            "type" : "basic"
+        },
+        {
+            "name" : "tag",
+            "command" : "git tag __PARAMS__",
+            "description" : "tag a known point",
+            "type" : "basic"
+        },
+        {
+            "name" : "merge",
+            "command" : "git merge __PARAMS__",
+            "description" : "merge between branches",
+            "type" : "basic"
+        }
+    ]
+}

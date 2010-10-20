@@ -37,6 +37,12 @@
             "type":         "grails/test"
         },
         {
+            "name":         "rerun failed tests",
+            "command":      "grails test-app -rerun",
+            "description":  "Run tests which are failing",
+            "type":         "grails/test"
+        },
+        {
             "name":         "run integration tests",
             "command":      "grails test-app -integration -clean",
             "description":  "Run environment integration tests",
@@ -212,6 +218,12 @@
         }
     ],
     "file_runners":[
+        {
+            "regex":        ".*Tests.groovy",
+            "name":         "Run JUnit test",
+            "command":      "grails test-app $(test_name=__NAME__ && echo ${test_name%Tests})",
+            "type":         "grails"
+        },
         {
             "regex":        ".*.groovy",
             "name":         "Run as groovy",

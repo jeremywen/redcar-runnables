@@ -10,6 +10,8 @@ Runnables
 
 **gem.json** - Basic RubyGem commands
 
+**git.json** - Everyday git commands
+
 **grails.json** - Build, test, run grails projects. Requires: Grails, Java
 
 **maven.json** - Install, test, run maven projects. Requires: Maven2
