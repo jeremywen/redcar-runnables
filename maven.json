@@ -4,37 +4,31 @@
             "name":"build",
             "command":"mvn compile",
             "description":"Build Maven Project",
-            "type":"maven"
         },
         {
             "name":"clean",
             "command":"mvn clean",
             "description":"Clean target directory of Maven project",
-            "type":"maven"
         },
         {
             "name":"deploy",
             "command":"mvn deploy",
             "description":"Deploys maven project to a central repository from the POM",
-            "type":"maven"
         },
         {
             "name":"install",
             "command":"mvn install",
             "description":"Build and Install Maven Project",
-            "type":"maven"
         },
         {
             "name":"install without tests",
             "command":"mvn install -Dmaven.test.skip=true",
             "description":"Build and Install Maven Project, without running tests",
-            "type":"maven"
         },
         {
             "name":"run tests",
             "command":"mvn test",
             "description":"Run all tests",
-            "type":"maven"
         }
     ],
 	"file_runners": [

@@ -4,217 +4,241 @@
             "name":         "clean",
             "command":      "grails clean",
             "description":  "Clean grails web project",
-            "type":         "grails/app"
+            "type":         "app"
         },
         {
             "name":         "run application",
             "command":      "grails run-app",
             "description":  "Start grails web project",
-            "type":         "grails/app"
+            "type":         "app"
         },
         {
             "name":         "documentation",
             "command":      "grails doc",
             "description":  "Generate app documentation",
-            "type":         "grails/app"
+            "type":         "app"
         },
         {
             "name":         "run war",
             "command":      "grails run-war",
             "description":  "Start grails web project from war",
-            "type":         "grails/app"
+            "type":         "app/war"
         },
         {
             "name":         "dependency report",
             "command":      "grails dependency-report",
-            "description":  "TRun ivy dependency report",
-            "type":         "grails/report"
+            "description":  "Run ivy dependency report",
+            "type":         "report"
         },
         {
             "name":         "run all tests",
             "command":      "grails test-app -clean",
             "description":  "Test grails web project",
-            "type":         "grails/test"
+            "type":         "test"
         },
         {
             "name":         "rerun failed tests",
             "command":      "grails test-app -rerun",
             "description":  "Run tests which are failing",
-            "type":         "grails/test"
+            "type":         "test"
         },
         {
             "name":         "run integration tests",
             "command":      "grails test-app -integration -clean",
             "description":  "Run environment integration tests",
-            "type":         "grails/test"
+            "type":         "test"
+        },
+        {
+            "name":         "run code coverage",
+            "command":      "grails test-app -coverage",
+            "description":  "Report Code Coverage (requires code-coverage plugin)",
+            "type":         "test/plugin"
         },
         {
             "name":         "run unit tests",
             "command":      "grails test-app -unit -clean",
             "description":  "Run JUnit tests",
-            "type":         "grails/test"
+            "type":         "test"
         },
         {
             "name":         "run features",
             "command":      "grails cucumber run-app",
             "description":  "Run cucumber features (requires features plugin)",
-            "type":         "grails/test"
+            "type":         "test/plugin"
+        },
+        {
+            "name":         "all easyb tests",
+            "command":      "grails test-app :easyb",
+            "description":  "Run easyb tests (requires easyb plugin)",
+            "type":         "test/plugin"
+        },
+        {
+            "name":         "easy unit tests",
+            "command":      "grails test-app unit:easyb",
+            "description":  "Run easyb unit tests (requires easyb plugin)",
+            "type":         "test/plugin"
+        },
+        {
+            "name":         "easyb integration tests",
+            "command":      "grails test-app integration:easyb",
+            "description":  "Run easyb integration tests (requires easyb plugin)",
+            "type":         "test/plugin"
         },
         {
             "name":         "create war",
             "command":      "grails war",
             "description":  "Create deployable war",
-            "type":         "grails/app"
+            "type":         "app/war"
         },
         {
             "name":         "create app",
             "command":      "grails create-app __PARAMS__",
             "description":  "Create a new grails application",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create controller",
             "command":      "grails create-controller __PARAMS__",
             "description":  "Create a new controller",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create domain class",
             "command":      "grails create-domain-class __PARAMS__",
             "description":  "Create a new domain class",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create filters",
             "command":      "grails create-filters __PARAMS__",
             "description":  "Create new filters",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create integration test",
             "command":      "grails create-integration-test __PARAMS__",
             "description":  "Create a new integration test",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create plugin",
             "command":      "grails create-plugin __PARAMS__",
             "description":  "Create a new plugin",
-            "type":         "grails/plugins"
+            "type":         "plugins"
         },
         {
             "name":         "create script",
             "command":      "grails create-script __PARAMS__",
             "description":  "Create a new script",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create service",
             "command":      "grails create-service __PARAMS__",
             "description":  "Create a new grails service",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create tag library",
             "command":      "grails create-tag-lib __PARAMS__",
             "description":  "Create a new grails tag library",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "create unit test",
             "command":      "grails create-unit-test __PARAMS__",
             "description":  "Create a new unit test",
-            "type":         "grails/create"
+            "type":         "create"
         },
         {
             "name":         "generate all",
             "command":      "grails generate-all __PARAMS__",
             "description":  "Generate a controller and views for a domain",
-            "type":         "grails/create"
+            "type":         "create/generate"
         },
         {
             "name":         "generate controller",
             "command":      "grails generate-controller __PARAMS__",
             "description":  "Generate a new controller for a domain",
-            "type":         "grails/create"
+            "type":         "create/generate"
         },
         {
             "name":         "generate views",
             "command":      "grails generate-views __PARAMS__",
             "description":  "Generate view for a domain",
-            "type":         "grails/create"
+            "type":         "create/generate"
         },
         {
             "name":         "help",
             "command":      "grails help",
             "description":  "Help with grails commands",
-            "type":         "grails/help"
+            "type":         "help"
         },
         {
             "name":         "init",
             "command":      "grails __PARAMS__ init",
             "description":  "Initialize",
-            "type":         "grails/app"
+            "type":         "app"
         },
         {
             "name":         "install dependency",
             "command":      "grails install-dependency __PARAMS__",
             "description":  "Install a new dependency",
-            "type":         "grails/install"
+            "type":         "install"
         },
         {
             "name":         "install plugin",
             "command":      "grails install-plugin __PARAMS__",
             "description":  "Install a new plugin",
-            "type":         "grails/plugins"
+            "type":         "plugins"
         },
         {
             "name":         "install templates",
             "command":      "grails install-templates __PARAMS__",
             "description":  "Install new templates",
-            "type":         "grails/install"
+            "type":         "install"
         },
         {
             "name":         "list plugins",
             "command":      "grails list-plugins",
             "description":  "List available plugins",
-            "type":         "grails/plugins"
+            "type":         "plugins"
         },
         {
             "name":         "package plugins",
             "command":      "grails package-plugin",
             "description":  "Package plugin for distribution",
-            "type":         "grails/plugins"
+            "type":         "plugins"
         },
         {
             "name":         "plugin info",
             "command":      "grails plugin-info __PARAMS__",
             "description":  "View information about a plugin",
-            "type":         "grails/plugins"
+            "type":         "plugins"
         },
         {
             "name":         "release plugin",
             "command":      "grails release-plugin",
             "description":  "View information about a plugin",
-            "type":         "grails/plugins"
+            "type":         "plugins"
         },
         {
             "name":         "set version",
             "command":      "grails set-version __PARAMS__",
             "description":  "Set the app's version in its metadata",
-            "type":         "grails/app"
+            "type":         "app"
         },
         {
             "name":         "stats",
             "command":      "grails stats",
             "description":  "View basic information about the grails app",
-            "type":         "grails/app"
+            "type":         "app"
         },
         {
             "name":         "uninstall plugin",
             "command":      "grails uninstall-plugin __PARAMS__",
             "description":  "Uninstall a plugin",
-            "type":         "grails/plugins"
+            "type":         "plugins"
         }
     ],
     "file_runners":[

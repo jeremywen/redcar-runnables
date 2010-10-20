@@ -1,22 +1,29 @@
 {
     "commands": [
         {
-            "name":"svn diff",
+            "name":"diff",
             "command":"svn diff",
-            "description":"View diff between cwd and remote repository",
-            "type":"versioning/svn"
+            "description":"View diff between cwd and remote repository"
+        },
+        {
+            "name":"add",
+            "command":"svn add __PARAMS__",
+            "description":"Add files to repository"
+        },
+        {
+            "name":"commit",
+            "command":"svn commit -m \"__PARAMS__\"",
+            "description":"Commit to remote repository"
         },
         {
             "name":"svn update",
             "command":"svn up",
-            "description":"Update project from respository",
-            "type":"versioning/svn"
+            "description":"Update project from respository"
         },
         {
             "name":"svn cleanup",
             "command":"svn cleanup",
-            "description":"Cleanup working copy and remove locks",
-            "type":"versioning/svn"
+            "description":"Cleanup working copy and remove locks"
         }
     ]
 }
