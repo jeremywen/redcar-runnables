@@ -7,6 +7,12 @@
             "type":         "app"
         },
         {
+            "name":         "compile",
+            "command":      "grails compile",
+            "description":  "Compile grails web project",
+            "type":         "app"
+        },
+        {
             "name":         "run application",
             "command":      "grails run-app",
             "description":  "Start grails web project",
@@ -32,7 +38,7 @@
         },
         {
             "name":         "run all tests",
-            "command":      "grails test-app -clean",
+            "command":      "grails test-app",
             "description":  "Test grails web project",
             "type":         "test"
         },
@@ -44,7 +50,7 @@
         },
         {
             "name":         "run integration tests",
-            "command":      "grails test-app -integration -clean",
+            "command":      "grails test-app integration:",
             "description":  "Run environment integration tests",
             "type":         "test"
         },
@@ -56,8 +62,14 @@
         },
         {
             "name":         "run unit tests",
-            "command":      "grails test-app -unit -clean",
+            "command":      "grails test-app unit:",
             "description":  "Run JUnit tests",
+            "type":         "test"
+        },
+        {
+            "name":         "run functional tests",
+            "command":      "grails test-app functional:",
+            "description":  "Run functional tests",
             "type":         "test"
         },
         {
@@ -73,7 +85,7 @@
             "type":         "test/plugin"
         },
         {
-            "name":         "easy unit tests",
+            "name":         "easyb unit tests",
             "command":      "grails test-app unit:easyb",
             "description":  "Run easyb unit tests (requires easyb plugin)",
             "type":         "test/plugin"
